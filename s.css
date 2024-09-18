@@ -11,6 +11,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 body{
     background:  #f9f9f9;
@@ -358,6 +359,7 @@ nav .faa{
     text-decoration: none;
     border: 1px solid hsl(45, 92%, 47%);
     background:hsl(45, 92%, 47%);
+    margin-bottom: 30px;
 }
 @media(max-width:700px){
     .redy-to-content h1{
@@ -387,22 +389,27 @@ nav .faa{
 }
 .new-col form{
     display: flex;
-    margin-left: 60px;
+    margin-left: 20px;
+
 }
 .new-col input{
     background: transparent;
     border: none;
-    padding: 10px;
+    padding: 10 0px;
     background: #f0f0f0;
     width: 350px;
+    height: 45px;
+    
 }
 
 @media(max-width:700px){
     .new-col{
         flex-direction: column;
+        margin: auto;
     }
     .new-col input{
         width: 210px;
+        height: 45px;
     }
 }
 
