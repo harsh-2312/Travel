@@ -1,0 +1,669 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://p.w3layouts.com/demos_new/template_demo/05-06-2019/commute_demo_Free/1199547472/web/images/banner1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+body{
+    background:  #f9f9f9;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color: white;
+    font-size: 18px;
+}
+.nav-link ul li i{
+    color: #ffc107;
+}
+.nav-link ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+.home-content h1{
+    color: white;
+    font-size: 50px;
+    padding-bottom: 25px;
+}
+.home-content p{
+    color: #c9c9c9;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.home-content .btn{
+    border: 1px solid white;
+    margin: auto;
+    padding: 8px 25px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home-content .btn:hover{
+    background: #ffc107;
+}
+nav .faa{
+    display: none;
+}
+
+
+@media(max-width:700px){
+    .home-content h1{
+        font-size: 30px;
+    }
+
+    .nav-link ul li{
+        display: block;
+    }
+    .nav-link{
+        position: absolute;
+        background: #dfaf20;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .faa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-link ul{
+        padding: 20px;
+    }
+}
+
+/* <!-- ----------------------------- What we do -----------   --> */
+
+.what-do {
+    width: 80%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: auto;
+    margin-bottom: 4%;
+}
+
+.tital h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+    margin-top: 5%;
+}
+
+.what-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 45%;
+    display: flex;
+    
+}
+
+.box {
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 2px 10px rgba(0, 0, 0, 0.1),0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.box i {
+    font-size: 40px;
+    color: hsl(45, 92%, 47%);
+    margin-bottom: 10px;
+}
+
+.box h1 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.box p {
+    font-size: 15px;
+    color: #666;
+    padding-top: 20px;
+}
+
+.col img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
+
+
+
+
+/* ------------------------- img-content-------------------  */
+
+.img-content{
+    background: url("https://p.w3layouts.com/demos_new/template_demo/05-06-2019/commute_demo_Free/1199547472/web/images/banner4.jpg");
+    width: 100%;
+    min-height: 50vh;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.img-col{
+    width: 70%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 25%;
+    padding: 30px 2px;
+    margin: auto;
+}
+.img-col-lef{
+    text-align: left;
+}
+.img-col-lef h2{
+    color: #ffc107;
+    font-size: 40px;
+}
+.img-col-lef span{
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+}
+.img-col-lef div{
+    display: flex;
+}
+
+.img-col-lef h1{
+    color: white;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.img-col-lef p{
+    color: #777;
+    padding-bottom: 40px;
+}
+.img-col-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.img-col-cont p{
+    color: #777;
+    font-size: 20px;
+}
+.img-col-cont h3{
+    color: white;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.img-col-cont i{
+    border: 2px solid white;
+    font-size: 25px;
+    border-radius: 100%;
+    padding: 25px;
+    background: white;
+}
+
+@media(max-width:700px){
+    .img-col-lef h1{
+        font-size: 30px;
+    }
+    
+}
+/* ---------------------  peopel ----------  */
+
+.people{
+    white-space: 100%;
+    min-height: 60vh;
+    background: #f9f9f9;
+}
+.people-col{
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-basis: 41%;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 2px 10px rgba(0, 0, 0, 0.1),0 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: white;
+}
+.people-col i{
+    color: hsl(45, 92%, 47%);
+    font-size: 30px;
+    padding-right: 10px;
+}
+.people-col p{
+    font-size: 20px;
+    max-width: 100%;
+    padding-bottom: 40px;
+}
+.people-col-img{
+    display: flex;
+    align-items: center;
+}
+.people-col-img div h3{
+    color: hsl(45, 92%, 47%);
+    font-size: 15px;
+    padding-bottom: 6px;
+}
+.people-col-img div p{
+    font-size: 13px;
+}
+.col-img{
+    display: flex;
+    align-items: center;
+}
+.col-img img{
+    max-width: 100px;
+    border-radius: 100%;
+    padding-right: 20px;
+}
+@media (max-width:700px){
+    .people{
+        margin-bottom: 5%;
+    }
+
+}
+
+/* ----------------- redy to work -----------------  */
+
+
+.redy-to{
+    width: 100%;
+    background: url("https://p.w3layouts.com/demos_new/template_demo/05-06-2019/commute_demo_Free/1199547472/web/images/banner4.jpg");
+    min-height: 40vh;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+}
+.redy-to-content h1{
+    color: white;
+    font-size: 40px;
+    margin-top: 8%;
+}
+.redy-to-content p{
+    color: #999;
+    max-width: 1000px;
+    padding-top: 50px;
+    font-size: 17px;
+    padding-bottom: 40px;
+}
+.btn-p{
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid hsl(45, 92%, 47%);
+    background:hsl(45, 92%, 47%);
+}
+@media(max-width:700px){
+    .redy-to-content h1{
+        font-size: 30px;
+    }
+    .redy-to-content p{
+        padding-bottom: 20px;
+    }
+}
+
+
+/* ----------------------  Newsletter  -----------   */
+
+.Newsletter{
+    width: 100%;
+    min-height: 30vh;
+}
+.new-col{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+.new-col p{
+    font-size: 23px;
+}
+.new-col form{
+    display: flex;
+    margin-left: 60px;
+}
+.new-col input{
+    background: transparent;
+    border: none;
+    padding: 10px;
+    background: #f0f0f0;
+    width: 350px;
+}
+
+@media(max-width:700px){
+    .new-col{
+        flex-direction: column;
+    }
+    .new-col input{
+        width: 210px;
+    }
+}
+
+
+
+
+/* ----------------  flooter --------------  */
+
+
+.flooter{
+    width: 100%;
+    min-height: 30vh;
+    background: black;
+}
+.flooter-content{
+    width: 80%;
+    margin: auto;
+}
+.flooter .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+    font-size: 30px;
+    color: white;
+}
+.flooter-content .line{
+    height: 2px;
+    width: 80%;
+    color: white;
+    background-color: white;
+}
+
+@media(max-width:700px){
+    .flooter .icons{
+        font-size: 20px;
+    }
+}
+
+
+
+/* ----------------------------  about-us ---------------   */
+
+.about-us{
+    width: 100%;
+    min-height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://p.w3layouts.com/demos_new/template_demo/05-06-2019/commute_demo_Free/1199547472/web/images/banner1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.setup-content{
+    padding-top: 100px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    text-align: left;
+    flex-basis: 44%;
+    align-items: center;
+}
+.setup-col{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+.setup-col-content{
+    display: flex;
+    flex-direction: column;
+}
+.setup-col h2{
+    padding: 20px 0;
+    font-weight: 100;
+}
+.setup-col h3{
+    padding-bottom: 10px;
+    font-weight: 100;
+    font-size: 22px;
+}
+.setup-col p{
+    color: #777;
+    max-width: 500px;
+    
+}
+.setup-col img{
+    max-width: 100%;
+}
+
+
+
+/* --------------------------- offer -----------  */
+
+.offer{
+    width: 100%;
+    min-height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://p.w3layouts.com/demos_new/template_demo/05-06-2019/commute_demo_Free/1199547472/web/images/banner2.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    /* justify-content: center; */
+}
+.offer-content{
+    margin: auto;
+    width: 60%;
+}
+.offer-content h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    padding-bottom: 25px;
+}
+.offer-content p{
+    color: #777;
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+
+
+
+/* --------------------------- our-Agents -------------  */
+
+
+.our-Agents{
+    width: 80%;
+    min-height: 50vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.our-col-img{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.our-col-img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* -----------------------  our-ser-op  -------------  */
+
+
+.our-ser-op{
+    width: 80%;
+    margin: auto;
+    min-height: 40vh;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 5%;
+}
+.our-ser-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 2px 10px rgba(0, 0, 0, 0.1),0 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+.our-ser-col i{
+    color: #ffc107;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.our-ser-col h2{
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.our-ser-col p{
+    color: #777;
+}
+
+/* ------------------------ our gallery  ----------  */
+
+
+.gallery{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 5%;
+}
+.gallery-col{
+    flex-basis: 24%;
+    flex-wrap: wrap
+}
+.gallery-col h2{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.gallery-col img{
+    width: 100%;
+}
+.gallery-col p{
+    padding-top: 15px;
+}
+
+/* ----------------- contect -----------  */
+
+
+.contect-us {
+    margin-top: 4%;
+    max-width: 100%;
+    margin:  auto;
+    padding: 20px;
+}
+
+.row-col {
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col-contect {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-contect label {
+    margin-bottom: 5px;
+}
+
+.col-contect input,
+.col-contect textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background: #f0f0f0;
+    
+}
+.btn-p{
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .col-contect {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* --------------------------------- map   --------------  */
+
+
+.map{
+    max-width: 100%;
+    margin-top: 5%;
+}
+.map iframe{
+    width: 100%;
+}
+
+
+
+
+
+
+
+

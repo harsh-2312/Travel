@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="s.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <title>Contect</title>
+    </head>
+
+    <body>
+        <section class="about-us">
+            <nav>
+                <a href="" class="logo">Commute</a>
+
+                <div class="nav-link" id="navLink">
+                <i class="fa-solid fa-xmark faa " onclick="hide()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="Services.html">services</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="contect.html">Contact</a></li>
+                    <li><a href=""><i class="fa-solid fa-phone"></i>+12 34 3456 7890</a></li>
+                    
+                </ul>
+                </div>
+                <i class="fa-solid fa-bars faa" onclick="show()"></i>
+            </nav>
+        </section>
+
+
+<!-- ------------------------------ contect ---------------  -->
+
+
+  <section class="contect-us">
+    <div class="tital">
+        <h1>Contact Us</h1>
+    </div>
+        <div class="row-col">
+            <div class="col-contect">
+                <label for="name">Your Name:</label>
+                <input type="text">
+            </div>
+            <div class="col-contect">
+                <label for="number">Phone Number:</label>
+                <input type="number">
+            </div>
+                <div class="col-contect">
+                <label for="name">Email Address:</label>
+                <input type="email">
+            </div>
+                <div class="col-contect">
+                <label for="name">Subject:</label>
+                <input type="text">
+            </div>
+                <div class="col-contect">
+                <textarea name="comment" id=""></textarea>
+            </div>
+                <button type="submit" class="btn-p">Submit</button>
+
+        
+        </div>
+  </section>
+
+
+
+  <!-- ------------------------------ map  ------------------  -->
+
+  <section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d476267.14635206776!2d72.49264614621178!3d21.158880922780046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1726419936242!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+
+        <!-- --------------------------- Newsletter  ------------------  -->
+
+        <section class="Newsletter">
+            <div class="tital">
+                <h1>Newsletter</h1>
+            </div>
+
+            <div class="new-col">
+                <p>Duis nisi sapien, elementum finibus fermentum eget, aliquet a leo.</p>
+
+                <form action="">
+                <input type="email" placeholder="Enter your Email....">
+                <button type="submit" class="btn-p">Subscribe</button>
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ------------------- flooter  ------------   -->
+
+        <section class="flooter">
+            <div class="tital">
+            <h1 style="color: white; padding-top: 30px;">Get In Touch with us</h1>
+            </div>
+            <div class="flooter-content">
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        </section>
+
+<script>
+
+    var navLink = document.getElementById("navLink");
+
+    function show(){
+        navLink.style.right="0";
+    }
+    function hide(){
+        navLink.style.right="-200px";
+    }
+
+</script>
+
+
+
+    </body>
+
+</html>
